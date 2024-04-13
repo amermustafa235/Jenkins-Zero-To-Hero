@@ -2,5 +2,5 @@ version: 0.0
 os: linux
 
 files:
-  - source: s3://arm-rabit-bucket/java_proj/rabit-##56.jar
+  - source: /arm-rabit-bucket/java_proj/rabit-##56.jar
     destination: /tmp/
