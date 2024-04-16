@@ -1,6 +1,15 @@
 version: 0.0
 os: linux
-
+environment:
+  variables:
+    war_file: "rabit.war"
+    
 files:
   - source: /
     destination: /tmp/
+hooks:
+  BeforeInstall:
+    - location: scripts/cleanup
+      timeout: 300
+      runas: ubuntu
+
