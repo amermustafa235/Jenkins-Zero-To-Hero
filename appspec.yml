@@ -9,7 +9,7 @@ files:
     destination: /tmp/
 hooks:
   BeforeInstall:
-    - location: scripts/cleanup
+    - location: scripts/cleanup.sh
       timeout: 300
       runas: ubuntu
 
